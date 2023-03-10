@@ -1,0 +1,65 @@
+/* 
+ * ACF "repeat-horizontal" class, display repeaters in horizontal columns 
+ */
+ .repeat-horizontal-1 > .acf-input > .acf-repeater > table > tbody > .acf-row,
+ .repeat-horizontal-2 > .acf-input > .acf-repeater > table > tbody > .acf-row,
+ .repeat-horizontal-3 > .acf-input > .acf-repeater > table > tbody > .acf-row,
+ .repeat-horizontal-4 > .acf-input > .acf-repeater > table > tbody > .acf-row,
+ .repeat-horizontal-5 > .acf-input > .acf-repeater > table > tbody > .acf-row,
+ .repeat-horizontal-6 > .acf-input > .acf-repeater > table > tbody > .acf-row {
+     display: grid;
+     grid-template-columns: 30px auto 30px;
+ }
+ .repeat-horizontal-1 > .acf-input > .acf-repeater > table > tbody {
+     display: grid;
+     row-gap: 0.5rem;
+     grid-template-columns: 100%;
+ }
+ .repeat-horizontal-2 > .acf-input > .acf-repeater > table > tbody {
+     display: grid;
+     row-gap: 0.5rem;
+     grid-template-columns: 50% 50%;
+ }
+ .repeat-horizontal-3 > .acf-input > .acf-repeater > table > tbody {
+     display: grid;
+     row-gap: 0.5rem;
+     grid-template-columns: 33.33% 33.33% 33.33%;
+ }
+ .repeat-horizontal-4 > .acf-input > .acf-repeater > table > tbody {
+     display: grid;
+     row-gap: 0.5rem;
+     grid-template-columns: 25% 25% 25% 25%;
+ }
+ .repeat-horizontal-5 > .acf-input > .acf-repeater > table > tbody {
+     display: grid;
+     row-gap: 0.5rem;
+     grid-template-columns: 20% 20% 20% 20% 20%;
+ }
+ .repeat-horizontal-6 > .acf-input > .acf-repeater > table > tbody {
+     display: grid;
+     row-gap: 0.5rem;
+     grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+ }
+
+ .post-type-acf-field-group .acf-field-setting-fc_layout {
+    width: calc(100% - 60px) !important;
+    margin-right: 30px !important;
+    margin-left: 30px !important;
+}
+.acf-field-settings .acf-field .acf-label.acf-input-sub, .acf-field-settings .acf-field .acf-input.acf-input-sub {
+    max-width: 100% !important;
+}
+.acf-field-settings .acf-field {
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+}
+.post-type-acf-field-group .acf-field-setting-fc_layout .acf-input-sub {
+    margin-right: 15px !important;
+    margin-left: 15px !important;
+}
+.acf-field.acf-field-group.counter {
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    left: 25%;
+}
